@@ -4,6 +4,6 @@
 
 ## 浏览效果
   
-![Alt text](./t_img/1.jpg)
-![Alt text](./t_img/2.jpg)
-![Alt text](./t_img/3.jpg) 
+![Alt text](./t_img/1.png)
+![Alt text](./t_img/2.png)
+![Alt text](./t_img/3.png) 
