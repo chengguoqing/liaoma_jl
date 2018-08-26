@@ -1,7 +1,7 @@
 <!--pages/index/index.wxml-->
 <view class="cen df_jh_drt">
   <image src="/img/logo.png" class="logo_dert"></image>
-  <view class="fz26 z9">扫码</view>
+  <view class="fz26 z9">资源扫码工具</view>
 </view>
 
 

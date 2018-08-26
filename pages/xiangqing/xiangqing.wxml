@@ -1,7 +1,7 @@
 <!-- 详情 -->
 <view class="cen df_jh_drt">
   <image src="/img/logo.png" class="logo_dert"></image>
-  <view class="fz26 z9">资源变现工具</view>
+  <view class="fz26 z9">资源扫码工具</view>
 </view>
 
 <view class='fz32 z3 cen mt40  '>
