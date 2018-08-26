@@ -1,0 +1,88 @@
+
+<view class='pd pt20 pm20 dfs_hg_deert' wx:if="{{is_hide}}">
+  <view class='cf fz26'>今日收益</view>
+  <view class='df_jh_deet cf cen mt20'>
+    ￥{{sd.day_amount}}
+     
+  </view>
+
+  <view class='mt20'>
+    <view class='scfd_Jhg_der'>
+      <view class='fz32 cf cen'>{{sd.balance}}</view>
+      <view class='fz26 cf cen'>余额</view>
+    </view>
+
+    <view class='scfd_Jhg_der'>
+      <view class='fz32 cf cen'>{{sd.all_amount}}</view>
+      <view class='fz26 cf cen'>收益总额</view>
+    </view>
+
+    <view class='qc'></view>
+  </view>
+</view>
+
+<view class='pd pt20 pm20 dfs_hg_deert' wx:if="{{!is_hide}}">
+
+  <view class='df_jh_deet cf cen mt20'>
+    <image src='{{user_info.head_img}}' class='user_icon_e yj'></image>
+     
+     <view class='mt20 fz30'>{{user_info.nick_name}}</view>
+  </view>
+
+
+
+</view>
+
+
+<view class='cen mui-row' >
+ <navigator url="/pages/gaunzhu/gaunzhu" class='df_dsdft cen pt20 pm20 fz30 ls'>
+  关注 <text class='red'>{{sd.attention_num}}</text>
+  </navigator>
+
+
+ <navigator url="/pages/fensoi/fensoi" class='df_dsdft cen pt20 pm20 fz32 ls blm'>
+  粉丝 <text class='red'>{{sd.follower_num}}</text>
+  </navigator>
+
+
+<view class='qc'></view>
+
+</view>
+
+
+
+<view wx:if="{{is_hide}}">
+<navigator class='pd pt20 pm20 fz30 bbm pr btm' url="/pages/zhanghu/zhanghu">
+    收入明细
+    <image src='/img/right.png' class='right_icone'></image>
+</navigator>
+
+
+<navigator class='pd pt20 pm20 fz30 bbm pr' url="/pages/mingxi/mingxi">
+    提现明细
+    <image src='/img/right.png' class='right_icone'></image>
+</navigator>
+</view>
+
+<button open-type="contact" wx:if="{{!is_hide}}" class='pd pt20 pm20 fz30 bbm pr de_cdfretry btm' url="/pages/mingxi/mingxi">
+    联系客服
+    <image src='/img/right.png' class='right_icone'></image>
+</button>
+
+
+<view class='pd pt20 pm20 fz30  pr' wx:if="{{is_hide}}">
+    提现说明
+    <view class='fz26 red df_jh_deer mt20'>
+    
+     为了您的资金安全，请在【料码精灵】公众号【我的钱包】进行提现，谢谢！
+        
+    </view>
+
+
+</view>
+
+
+<view class='mt50 fz32 cen z6' wx:if="{{is_hide}}">
+    料码
+  <view class='fz22 z6'>资源变现工具，帮你提高变现率</view>
+</view>

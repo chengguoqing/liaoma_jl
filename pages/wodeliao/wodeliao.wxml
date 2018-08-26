@@ -1,0 +1,87 @@
+<view class="cen df_jh_drt">
+  <image src="/img/logo.png" class="logo_dert"></image>
+  <view class="fz26 z9">扫码</view>
+</view>
+
+<view class='bbm'>
+  <view class='sd_jh_deert {{item.cls}}' wx:for="{{is_msd}}" bindtap='sd_ddrfgfxv' data-idx="{{index}}">
+    {{item.name}}
+  </view>
+
+  <view class='qc'></view>
+</view>
+
+<view wx:if="{{is_mm==0}}">
+
+  <navigator class='sd_drrttys pd bbm pt20 pm20' wx:for="{{x_remove_resource}}" url="/pages/list_de/list_de?code_r={{item.id}}">
+    <view class='dian dsf_jh_deert'>
+      <view class="fz26 z9">
+        {{item.timedf}}
+      </view>
+      <view class="fz26 z3 mt20">
+        <text class='red' wx:if="{{item.zhuangts}}">【{{item.zhuangts}}】</text> {{item.title}}
+      </view>
+    </view>
+    <view class='ov tr fz26 z9'>
+      已售
+      <text class='red'>{{item.sale}}</text>份
+      
+      <view class='mt10' wx:if="{{item.dele_d}}" class="DSf_dsf_drrt" catchtap='delect' data-idx="{{index}}" data-idr="{{item.id}}">
+        <image src='/img/lajixiang.png' class='lajixiang'></image>
+      </view>
+
+    </view>
+
+    <view class='qc'></view>
+  </navigator>
+
+  <view wx:if="{{isgeng_d}}" class="pt20 pm20 btm cen fz26">
+    没有更多数据了...
+  </view>
+
+  <view wx:if="{{!isgeng_d&&x_remove_resource.length>=10}}" class="pt20 pm20 btm cen fz26">
+    加载中...
+  </view>
+
+</view>
+
+
+
+
+
+
+
+<view wx:if="{{is_mm==1}}">
+
+  <navigator class='sd_drrttys pd bbm pt20 pm20' wx:for="{{x_get_order_list_d}}" url="/pages/xiangqing/xiangqing?id_r={{item.resource_id}}">
+    <view class='dian dsf_jh_deert'>
+      <view class="fz26 z9">
+        {{item.timedf}}
+      </view>
+      <view class="fz26 z3 mt20">
+        <text class='red' wx:if="{{item.zhuangts}}">【{{item.zhuangts}}】</text> {{item.title}}
+      </view>
+    </view>
+    <view class='ov tr fz26 z9'>
+
+      <text class='red'>{{item.price}}元</text>
+
+
+      <view class='mt10' catchtap='delect_er' data-idx="{{index}}"   class="DSf_dsf_drrt" data-idr="{{item.id}}">
+        <image src='/img/lajixiang.png' class='lajixiang'></image>
+      </view>
+
+    </view>
+
+    <view class='qc'></view>
+  </navigator>
+
+  <view wx:if="{{isgeng_d_er}}" class="pt20 pm20 btm cen fz26">
+    没有更多数据了...
+  </view>
+
+  <view wx:if="{{!isgeng_d_er&&x_remove_resource.length>=10}}" class="pt20 pm20 btm cen fz26">
+    加载中...
+  </view>
+
+</view>

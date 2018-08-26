@@ -1,0 +1,30 @@
+<navigator class='sd_drrttys pd bbm pt20 pm20' wx:for="{{sd_kis}}" url="/pages/list_de/list_de">
+  <view class='dian dsf_jh_deert'>
+    <view class="fz26 z9">
+      {{item.timedf}}
+    </view>
+    <view class="fz26 z3 mt10">
+      <text class='red'>{{item.amount}}</text> 元
+    </view>
+  </view>
+  <view class='ov tr fz26 z9'>
+
+    <view class='mt50'>
+      <text class='red'> -{{item.fee}}</text> 元
+    </view>
+
+  </view>
+
+  <view class='qc'></view>
+</navigator>
+
+
+
+
+<view class='btm pt20 fz26 pm20 z9 cen' wx:if="{{!is_dsrt&&sd_kis.length>=10}}">
+  加载中...
+</view>
+
+<view class='btm pt20 fz26 pm20 z9 cen' wx:if="{{is_dsrt}}">
+  已加载全部数据
+</view>

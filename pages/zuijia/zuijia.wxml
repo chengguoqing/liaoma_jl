@@ -1,0 +1,99 @@
+<!--pages/index/index.wxml-->
+<view class="cen df_jh_drt">
+  <image src="/img/logo.png" class="logo_dert"></image>
+  <view class="fz26 z9">资源变现工具</view>
+</view>
+
+
+
+
+
+<view class="mt20 pd">
+  <view>
+    <text class="bgzhu dsf_jh_s yj"></text>
+    <text class="fz30 ml10">标题</text>
+    <text class='red fz24 ml5'>(不可改)</text>
+  </view>
+
+  <view class="mt20">
+    <input class="sd_deert" value='{{title}}' disabled='{{true}}'></input>
+  </view>
+
+
+
+
+
+
+
+  <view class="mt30">
+    <text class="bgzhu dsf_jh_s yj"></text>
+    <text class="fz30 ml10">料</text>
+  </view>
+
+  <view class="mt20">
+
+    <view class='pr sd_jh_eeer' wx:if="{{is_liao}}">
+      <icon type='clear' class="clse_dseert" bindtap='sddf_dsr' data-idx="1"></icon>
+      <textarea class='br' bindinput='get_content' value='{{content}}'  maxlength="9999" ></textarea>
+    </view>
+
+
+    <view class='pr' wx:if="{{s_kj_der.length>0}}">
+      <view class='add_sertx pr cz' wx:for="{{s_kj_der}}" bindtap='fangda_dr' data-imger="{{item}}">
+        <icon type='clear' class="clse_dseert" catchtap='dsf_derty' data-idx="{{index}}"></icon>
+        <image src="{{item}}"></image>
+      </view>
+
+
+     <view class='add_sertx ab cz' bindtap='shg_deert'>
+      <image src='/img/add_icon.png' class="cz"></image>
+    </view>
+      
+
+
+
+    </view>
+
+
+    <view class="sd_h_deeret" wx:if="{{!is_liao}}" bindtap='sddf_dsr' data-idx="1">
+      <view class='yj4 br df_jh_deert'>
+        <image src='/img/qianbi.png' class='qianbieer cz'></image>
+      </view>
+      <view class="z9 fz26 mt10">文字</view>
+
+    </view>
+
+
+
+
+
+    <view class="sd_h_deeret"  wx:if="{{s_kj_der.length<=0}}" bindtap='shg_deert'>
+
+      <view class='yj4 br df_jh_deert'>
+        <image src='/img/tupian.png' class='qianbieer cz'></image>
+      </view>
+      <view class="z9 fz26 mt10">图片</view>
+
+    </view>
+
+
+
+    <view class="qc"></view>
+
+
+  </view>
+
+
+
+
+
+  <view class='btm mt40'>
+    <view class='shengcsd_sewr ' bindtap='qzuijia'>
+      确认追加
+    </view>
+
+  </view>
+
+
+
+</view>

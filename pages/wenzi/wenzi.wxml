@@ -1,0 +1,10 @@
+<view class='pd pt20 pm20'>
+  <textarea placeholder='请输入文字' class='fz26 z9 d_jh_deerttx' auto-focus='{{true}}' bindinput='get_test_e'></textarea>
+</view>
+
+
+<view class='pd mt40 dfg_dfsgfrtty'>
+  <view class='yj4 f_Jh_drrtr {{test_e?"act":""}}' bindtap='sd_jh_drrty'>
+    完成
+  </view>
+</view>

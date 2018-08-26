@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/star/star",
+    "pages/shouru/shouru",
+    "pages/wodeliao/wodeliao",
+    "pages/zuijia/zuijia",
+    "pages/index/index",
+    "pages/wenzi/wenzi",
+    "pages/fensoi/fensoi",
+    "pages/gaunzhu/gaunzhu",
+    "pages/zhanghu/zhanghu",
+    "pages/mingxi/mingxi",
+    "pages/xiangqing/xiangqing",
+    "pages/list_de/list_de",
+    "pages/xzmb/xzmb",
+    "pages/liste/list"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#70c434",
+    "navigationBarTitleText": "料码精灵"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "color": "#333",
+    "selectedColor": "#70c434",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/img/bottm/xz.png",
+        "selectedIconPath": "/img/bottm/xz_a.png"
+      },
+      {
+        "pagePath": "pages/wodeliao/wodeliao",
+        "text": "我的料",
+        "iconPath": "/img/bottm/xy.png",
+        "selectedIconPath": "/img/bottm/xz_b.png"
+      },
+      {
+        "pagePath": "pages/shouru/shouru",
+        "text": "我的",
+        "iconPath": "/img/bottm/xw.png",
+        "selectedIconPath": "/img/bottm/xz_c.png"
+      }
+    ]
+  }
+}

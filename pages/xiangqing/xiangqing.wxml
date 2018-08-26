@@ -1,0 +1,35 @@
+<!-- 详情 -->
+<view class="cen df_jh_drt">
+  <image src="/img/logo.png" class="logo_dert"></image>
+  <view class="fz26 z9">资源变现工具</view>
+</view>
+
+<view class='fz32 z3 cen mt40  '>
+  {{sd.title}}
+</view>
+
+<view class='pd pt20 pm20 dfdsf_jh_drt'>
+
+  <view wx:for="{{content_l}}" class='btm pt20 pm20'>
+    <view class='fz26 z9'>
+      {{item.timedf}}
+    </view>
+
+    <view class='fz30 z6 mt20'>
+      <text selectable='{{true}}' class='dsf_jh_deerty'>{{item.content}}</text>
+
+      <image src='{{item}}' class='topi_sd mt20' mode="widthFix" wx:for="{{item.imgder}}"></image>
+
+    </view>
+
+  </view>
+
+
+
+</view>
+
+ 
+<view class='fz32 z6 cen mt40 pm40 btm pt20'>
+  料码
+  <view class=' fz26'>资源变现工具，帮你提高变现率</view>
+</view>

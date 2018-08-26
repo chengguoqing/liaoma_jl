@@ -1,0 +1,53 @@
+<!-- 图文列表 -->
+<template name="tuwenlist">
+  <view class='pd pt10 pm10 bgff'>
+    <navigator url="/pages/particulars/particulars" class='dsf_iuy_s pm10 {{hg_s}}' wx:for="111111111">
+      <view class='sd_iut_sdf pr'>
+        <image src='/img/dsf_a.png' class='pou_sd'></image>
+        <image src='http://duxinggj.com/fulan/img/2855_thumb_G_1507260184106.jpg' class='fm'> </image>
+      </view>
+      <view class='dsfds_sd_sd'>
+        <view class='dianer z6 fs_sd_sdf fz28 mt10 pl10'>
+          2017新款时尚修身里面鹿皮复合羊绒大衣（现货，赶紧下单手慢无）
+        </view>
+        <view class='sd_ddsd_sdxc pl10'>
+          <label class='fz30 ye'>￥99</label>
+          <label class='fz26 z9 del'>￥498</label>
+        </view>
+        <view class='pl10 pr'>
+          <image src='/img/xin.png' class='xingsdf'></image>
+          <label class='fz24 z6 ml5'>614人</label>
+          <image src='/img/sdfh.png' class='sd_sd_sdfx'></image>
+        </view>
+      </view>
+    </navigator>
+    <view class='qc'></view>
+    <image src='/img/toubu.png' class='df_iuy_sd yj' bindtap='tingbu' wx:if="{{sd_sffd}}"></image>
+  </view>
+</template>
+
+<template name="from">
+  <view class='pd fz34 sf_s_sdfgx btm'>
+    <label class='sdlj_sdf fl'>{{label}}</label>
+    <view class='ov pr'>
+      <input type='{{type?type:"text"}}' placeholder='{{tishi}}'></input>
+      <button class="yanzs_sd" wx-if="{{yanz}}">发送验证码</button>
+
+    </view>
+    <view class='qc'></view>
+  </view>
+</template>
+
+
+<template name="chengshi">
+  <picker mode="region" bindchange="chengshi" value="{{region}}">
+    <view class='pd fz34 sf_s_sdfgx btm pr'>
+      <label class='sdlj_sdf fl'>{{label}}</label>
+      <view class="picker ov fz34 pr" wx:if="{{region[0]}}">{{region[0]}}-{{region[1]}}-{{region[2]}}
+
+      </view>
+      <image src='/img/right.png' class='right_sdfgx'></image>
+      <view class='qc'></view>
+    </view>
+  </picker>
+</template>

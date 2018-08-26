@@ -1,0 +1,67 @@
+<view class='pd pt20'>
+
+  <image src='{{ma_sdfg+sd.img_url}}' class="w100 topi_sd"></image>
+
+
+  <navigator class='caha_ddfr yj4 br mt60' url="/pages/xiangqing/xiangqing?id_r={{srr_df}}">
+    查看详情
+  </navigator>
+
+  <view class='caha_ddfr yj4 br mt30' bindtap='baocun' data-url="{{ma_sdfg+sd.img_url}}">
+    保存到相册
+  </view>
+
+  <view class='caha_ddfr yj4 br mt30' bindtap='yijian' wx:if="{{sd.price>0 && sd.is_refund<2&& sd.is_expire<2}}">
+    一键通知
+    <text class='fz26 red'>(关注您的粉丝收到消息推送)</text>
+  </view>
+
+
+  <navigator url="/pages/zuijia/zuijia?liao_id={{sd.id}}&title={{sd.title}}" class='caha_ddfr yj4 br mt30' wx:if="{{sd.is_refund<2&& sd.is_expire<2&&type_e!=1}}">
+    追加内容
+    <text class='fz26 red'>(购买过的用户收到消息推送)</text>
+  </navigator>
+
+ 
+  <view class='caha_ddfr yj4 br mt30 df_Jh_df_det' wx:if="{{sd.is_refund==1&&type_e!=1}}" bindtap='yitkus' >
+    一键退款
+  </view>
+
+  <view class='caha_ddfr yj4 br mt30 df_Jh_df_det' wx:if="{{type_e==1}}" bindtap='suy_deertty'>
+    关闭
+  </view>
+
+  <view class="mt60" wx:if="{{type_e!=1}}">
+    <view class='pt20 pm20 fz26'>
+
+      收益总额
+      <text class='red'>{{sd.all_amount}}</text>元
+
+      <view class='fr'>
+        已售
+        <text class='red'>{{sd.sale}}</text>份
+      </view>
+      <view class='qc'></view>
+    </view>
+
+  </view>
+
+
+</view>
+
+
+
+<view class='btm pd pt20 pm20 fz30 pr' wx:for="{{femsd_sd}}" wx:if="{{type_e!=1}}">
+  <image src='{{item.head_img}}' class='yj topi_sd_deer cz'></image>
+  <text class='ml10'>{{item.nick_name}}</text>
+  <image src='/img/yituikuan.png' class='yituikuan_der' wx:if="{{item.status==3}}"></image>
+  <view class='fr fz26 z9'>{{item.timedf}}</view>
+</view>
+
+<view class='btm pt20 fz26 pm20 z9 cen' wx:if="{{type_e!=1&&!is_dsrt&&femsd_sd.length>=10}}">
+  加载中...
+</view>
+
+<view class='btm pt20 fz26 pm20 z9 cen' wx:if="{{type_e!=1&&is_dsrt}}">
+  已加载全部数据
+</view>

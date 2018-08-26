@@ -1,0 +1,13 @@
+.dsf_jh_deert{
+  width: 50%;
+  float: left
+}
+.w_derrrtyx{
+  width: 100%;
+  height: 340rpx;
+}
+.sd_jh_deertt{
+  position: absolute;
+  right: 30rpx;
+  top: 10rpx;
+}

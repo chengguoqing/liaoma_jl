@@ -1,0 +1,39 @@
+.dfs_hg_deert{
+  background: #70C434
+}
+.df_jh_deet{
+  font-size: 72rpx;
+}
+.scfd_Jhg_der{
+  width: 50%;
+  float: left
+}
+.right_icone{
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 25rpx;
+}
+.df_jh_deer{
+  text-indent: 40rpx;
+  line-height: 1.5
+}
+.df_dsdft{
+  width: 50%;
+  float: left
+}
+.de_cdfretry{
+  background: #fff;
+  padding: 0px;
+  text-align: left;
+  padding-left: 20rpx;
+}
+.de_cdfretry::after{
+  display: none
+}
+
+.user_icon_e{
+  width: 150rpx;
+  height: 150rpx;
+}

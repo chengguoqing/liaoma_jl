@@ -1,0 +1,210 @@
+<!--pages/index/index.wxml-->
+<view class="cen df_jh_drt">
+  <image src="/img/logo.png" class="logo_dert"></image>
+  <view class="fz26 z9">扫码</view>
+</view>
+
+
+ 
+ 
+
+<view class="mt20 pd">
+  <view>
+    <text class="bgzhu dsf_jh_s yj"></text>
+    <text class="fz30 ml10">标题</text>
+  </view>
+
+  <view class="mt20">
+    <input class="sd_deert" bindinput="gettitle" maxlength='18'></input>
+  </view>
+
+ 
+
+  <view class="mt30">
+    <text class="fz30 ">简介</text>
+    <text class='fz26 red'>(可不填)</text>
+  </view>
+
+  <view class="mt20">
+    <textarea class='sd_deert ab' bindinput='get_introduce' maxlength="46"></textarea>
+  </view>
+
+
+  <view class="mt30">
+    <text class="bgzhu dsf_jh_s yj"></text>
+    <text class="fz30 ml10">料</text>
+  </view>
+
+  <view class="mt20">
+
+    <view class='pr sd_jh_eeer' wx:if="{{is_liao}}">
+      <icon type='clear' class="clse_dseert" bindtap='sddf_dsr' data-idx="1"></icon>
+      <textarea class='br' bindinput='get_content' value='{{content}}' maxlength="9999"></textarea>
+    </view>
+
+
+    <view class='pr' wx:if="{{s_kj_der.length>0}}">
+      <view class='add_sertx pr cz' wx:for="{{s_kj_der}}" bindtap='fangda_dr' data-imger="{{item}}">
+        <icon type='clear' class="clse_dseert" catchtap='dsf_derty' data-idx="{{index}}"></icon>
+        <image src="{{item}}"></image>
+      </view>
+
+    <view class='add_sertx ab cz' bindtap='shg_deert'>
+      <image src='/img/add_icon.png' class="cz"></image>
+    </view>
+      
+      <!-- <image src="/img/add.png" class="add_sertx cz" ></image> -->
+    </view>
+
+
+    <view class="sd_h_deeret" wx:if="{{!is_liao}}" bindtap='sddf_dsr' data-idx="1">
+      <view class='yj4 br df_jh_deert'>
+        <image src='/img/qianbi.png' class='qianbieer cz'></image>
+      </view>
+      <view class="z9 fz26 mt10">文字</view>
+
+    </view>
+ 
+
+
+
+
+    <view class="sd_h_deeret" wx:if="{{s_kj_der.length<=0}}" bindtap='shg_deert'>
+
+      <view class='yj4 br df_jh_deert'>
+        <image src='/img/tupian.png' class='qianbieer cz'></image>
+      </view>
+      <view class="z9 fz26 mt10">图片</view>
+
+    </view>
+
+
+
+    <view class="qc"></view>
+
+
+  </view>
+
+
+
+
+
+
+</view>
+
+
+<view class='pl20' wx:if="{{is_hide}}">
+  <view class="mt30">
+    <text class="bgzhu dsf_jh_s yj"></text>
+    <text class="fz30 ml10">定价(元)</text>
+  </view>
+  <view wx:for="{{dingjia}}" class="d_jh_deeert pr20">
+
+    <view class='br {{item.cls}} ' bindtap='sd_drrtt' data-idx="{{index}}">{{item.name}}</view>
+  </view>
+
+  <view class='qc'></view>
+ 
+  <view class="mt20 pr20">
+    <input class="sd_deert" type='digit' placeholder='自定义金额' value='{{price}}' bindinput='get_price'></input>
+  </view>
+
+
+
+</view>
+
+
+
+
+
+<view class='pd dsf_jh_deert mt20' wx:if="{{is_hide}}">
+  <view class=' pt20 pm20 bbm'>
+    <text class="fz30 ">其他功能</text>
+    <text class='fz26 red'>(非必填)</text>
+  </view>
+
+  <view class="pd">
+    <view class='dsfdsf_deet fz30 pr bbm'>
+      <view bindtap='f_is_ssdff_a'>
+        过期时间
+        <image src='/img/down.png' class="down_deert {{is_ssdff_a?'act':''}}"></image>
+      </view>
+      <view class='mt20' wx:if="{{is_ssdff_a}}">
+        <view class='red fz26 pm20'>所选时间为稿件下架时间，此时段以后将不能被购买
+        </view>
+        <view class='sd_jh_dert fl'>
+
+
+          <picker mode="date" value="{{dateer}}" bindchange="bindDateChange" class="br dsf_dert fz26">
+            <view class="picker">
+              {{dateer||'请选日期'}}
+            </view>
+          </picker>
+
+
+          <picker mode="time" value="{{time_sd}}" bindchange="bindDateChange_er" class="br dsf_dert fz26 ab">
+            <view class="picker">
+              {{time_sd||'请选择时间'}}
+            </view>
+          </picker>
+        </view>
+        <view class='ov'>
+          <text class='qingkong_de' bindtap='qingdf'>清空</text>
+        </view>
+
+        <view class='qc'></view>
+
+
+      </view>
+
+
+
+    </view>
+    <view class='dsfdsf_deet fz30 pr bbm'>
+      <view bindtap='f_is_ssdff_b'>
+        是否退款
+        <image src='/img/down.png' class="down_deert {{is_ssdff_b?'act':''}}"></image>
+
+      </view>
+      <view class='mt20' wx:if="{{is_ssdff_b}}">
+        <view class='red fz26 pm20'>选中退款将会有一键退款的功能 </view>
+        <view bindtap='gu_seert'>
+          <view class='df_erttyxc cz'>
+            <icon type='success' size='18' wx:if="{{gouxun_s}}"></icon>
+            <text class='giu_dsdf br yj' wx:else></text>
+          </view>
+          <text class='z6 fz30 ml10'>是否退款</text>
+        </view>
+      </view>
+
+
+    </view>
+    <view class='dsfdsf_deet fz30 pr bbm'>
+      <view bindtap='f_is_ssdff_c'>
+        选择模板
+      </view>
+      <image src='/img/down.png' class="down_deert {{is_ssdff_c?'act':''}}"></image>
+      <view class='pt20' wx:if="{{is_ssdff_c}}">
+        <view class='red fz26 pm20 '>点击图片选择料码模版 </view>
+        <view>
+          <image src='/img/{{moban_ds}}.png' class="usdd_dseert" bindtap='xzmb_erert'></image>
+        </view>
+      </view>
+
+
+    </view>
+
+  </view>
+
+
+
+
+</view>
+
+
+<view class='qc'></view>
+<view class='pd'>
+  <view class='shengcsd_sewr ' bindtap='sclm_ddrt'>
+    生成料码
+  </view>
+</view>

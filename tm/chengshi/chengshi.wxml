@@ -1,0 +1,7 @@
+<template name="chengshi">
+  <picker mode="region" bindchange="chengshi" value="{{region}}">
+    <view class="picker">
+      {{region[0]}}-{{region[1]}}-{{region[2]}}
+    </view>
+  </picker>
+</template> 

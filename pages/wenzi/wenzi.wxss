@@ -1,0 +1,13 @@
+.d_jh_deerttx{
+  min-height: 300rpx;
+}
+.f_Jh_drrtr{
+  line-height: 80rpx;
+  background: #999;
+  color: #fff;
+  text-align: center;
+  font-size: 32rpx;
+}
+.f_Jh_drrtr.act{
+  background: #70C434
+}

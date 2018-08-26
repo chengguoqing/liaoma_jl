@@ -1,0 +1,29 @@
+<view class='pd pt20 pm20 bbm' wx:for="{{sd_kis}}">
+  <view class='dsf_jh_deert dian'>
+    <image src='{{item.head_img}}' class='yj dfg_jh_dert cz'></image>
+    <text class='fz32 z3 ml10'>{{item.nick_name}}</text>
+  </view>
+  <view class='ov fz26 z9 df_jh_deert dian tr'>
+   {{item.timedf}}
+   
+    <view class=' tr'  catchtap='delect_er' data-idx="{{index}}" data-idr="{{item.id}}">
+      <image src='/img/lajixiang.png' class='lajixiang'></image>
+    </view>
+
+   
+  </view>
+
+  <view class='qc'></view>
+
+
+</view>
+
+
+
+<view class='btm pt20 fz26 pm20 z9 cen' wx:if="{{!is_dsrt&&sd_kis.length>=10}}">
+  加载中...
+</view>
+
+<view class='btm pt20 fz26 pm20 z9 cen' wx:if="{{is_dsrt}}">
+  已加载全部数据
+</view>

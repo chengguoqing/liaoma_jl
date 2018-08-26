@@ -1,0 +1,29 @@
+<view class="pd pt20 pm20 bbm" wx:for="{{sd_kis}}">
+  <view class='fl fg_jh_df dian fz26 z9 '>
+    {{item.timedf}}
+  </view>
+
+  <view class='fl fg_jh_df dian fz26 z9 tr '>
+    <image src='{{item.head_img}}' class='dsf_kh_det yj cz'></image>
+    <text class='fz26 z3 ml10'>{{item.nick_name}}</text>
+  </view>
+
+  <view class='qc pt10'></view>
+  <view class='fl fg_jh_df dian fz26 z6 '>
+    {{item.title}}
+  </view>
+  <view class='fl fg_jh_df dian fz26 z6  tr'>
+    <text class='red'>{{item.amount}}</text>元
+  </view>
+
+  <view class='qc'></view>
+</view>
+
+
+<view class='btm pt20 fz26 pm20 z9 cen' wx:if="{{!is_dsrt&&sd_kis.length>=10}}">
+  加载中...
+</view>
+
+<view class='btm pt20 fz26 pm20 z9 cen' wx:if="{{is_dsrt}}">
+  已加载全部数据
+</view>

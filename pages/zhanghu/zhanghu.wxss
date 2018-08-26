@@ -1,0 +1,8 @@
+.fg_jh_df{
+  width: 50%;
+  float: left
+}
+.dsf_kh_det{
+  width: 40rpx;
+  height: 40rpx;
+}

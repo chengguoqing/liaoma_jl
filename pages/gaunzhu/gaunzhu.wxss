@@ -1,0 +1,14 @@
+.dfg_jh_dert{
+  width: 60rpx;
+  height: 60rpx;
+}
+.dsf_jh_deert{
+  width: 50%;
+  float: left
+}
+.df_jh_deert{
+  line-height: 60rpx;
+}
+.df_jh_deert{  
+  line-height: 1.6
+}

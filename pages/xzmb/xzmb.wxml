@@ -1,0 +1,9 @@
+<!-- 选择模板 -->
+
+<view class='pl20'>
+    <view class="dsf_jh_deert pr20 mt10 pr" wx:for="{{xz_dsf}}" bindtap='sd_ddfgs' data-idx="{{item.id}}">
+        <icon type='success' class='sd_jh_deertt' wx:if="{{item.cls}}"></icon>
+        <image src="/img/{{item.id}}.png" class="w_derrrtyx"></image>
+    </view>
+ 
+</view>
